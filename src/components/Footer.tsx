@@ -1,4 +1,4 @@
-import { Phone, MapPin } from "lucide-react";
+import { Phone, MapPin, Mail } from "lucide-react";
 import logo from "@/assets/logo.jpg";
 
 const Footer = () => {
@@ -17,14 +17,7 @@ const Footer = () => {
                 alt="الليبية الجديدة"
                 className="h-14 w-auto object-contain bg-secondary-foreground/10 rounded-lg p-1"
               />
-              <div>
-                <h3 className="text-xl font-bold text-secondary-foreground">
-                  الليبية الجديدة
-                </h3>
-                <p className="text-sm text-secondary-foreground/70">
-                  لإستيراد السيارات وقطع الغيار
-                </p>
-              </div>
+          
             </div>
             <p className="text-secondary-foreground/70 leading-relaxed mb-6 max-w-md">
               شركة الليبية الجديدة لاستيراد السيارات وقطع الغيار، تعمل منذ عام
@@ -72,7 +65,6 @@ const Footer = () => {
                   <Phone className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <div className="text-sm text-secondary-foreground/60">مفوض</div>
                   <a
                     href="tel:0913306829"
                     className="text-secondary-foreground hover:text-primary transition-colors"
@@ -87,7 +79,6 @@ const Footer = () => {
                   <Phone className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <div className="text-sm text-secondary-foreground/60">مندوب</div>
                   <a
                     href="tel:0922230070"
                     className="text-secondary-foreground hover:text-primary transition-colors"
@@ -96,13 +87,28 @@ const Footer = () => {
                     0922230070
                   </a>
                 </div>
+              
+              </li>
+                <li className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Mail className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <a
+                    href="mailto:info@nlicsp.ly"
+                    className="text-secondary-foreground hover:text-primary transition-colors"
+                    dir="ltr"
+                  >
+                    info@nlicsp.ly
+                  </a>
+                </div>
+              
               </li>
               <li className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center flex-shrink-0">
                   <MapPin className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <div className="text-sm text-secondary-foreground/60">الموقع</div>
                   <a
                     href="https://maps.app.goo.gl/zCaGYNFgpciR8b1e9?g_st=ic"
                     target="_blank"

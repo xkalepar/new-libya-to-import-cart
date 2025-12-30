@@ -4,17 +4,27 @@ import { Button } from "@/components/ui/button";
 const contacts = [
   {
     icon: Phone,
-    label: "مفوض",
+    label: "",
     value: "0913306829",
     href: "tel:0913306829",
-    highlight: true,
+    highlight: false,
+    button: "اتصل الآن"
   },
   {
     icon: Phone,
-    label: "مندوب",
+    label: "",
     value: "0922230070",
     href: "tel:0922230070",
     highlight: false,
+    button: "اتصل الآن"
+  },
+  {
+    icon: Mail,
+    label: "",
+    value: "info@nlicsp.ly",
+    href: "mailto:info@nlicsp.ly",
+    highlight: false,
+    button: "ارسل رسالة"
   },
 ];
 
@@ -76,8 +86,7 @@ const ContactSection = () => {
                   variant={contact.highlight ? "heroOutline" : "default"}
                   className="w-full"
                 >
-                  اتصل الآن
-                </Button>
+{contact.button}                </Button>
               </a>
             </div>
           ))}
