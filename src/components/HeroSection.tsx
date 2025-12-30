@@ -61,7 +61,7 @@ const HeroSection = () => {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-3 gap-8 mt-16 pt-16 border-t border-primary-foreground/20">
+          <div className="grid grid-cols-3 gap-8 mt-16 pt-16 pb-2 border-t border-primary-foreground/20">
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
                 +3
@@ -91,11 +91,7 @@ const HeroSection = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 rounded-full border-2 border-primary-foreground/50 flex items-start justify-center p-2">
-          <div className="w-1.5 h-3 bg-primary rounded-full" />
-        </div>
-      </div>
+      
     </section>
   );
 };

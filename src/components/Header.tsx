@@ -42,13 +42,7 @@ const Header = () => {
               alt="الليبية الجديدة"
               className="h-12 w-auto object-contain"
             />
-            <span
-              className={`font-bold text-lg hidden sm:block transition-colors ${
-                isScrolled ? "text-foreground" : "text-primary-foreground"
-              }`}
-            >
-              الليبية الجديدة
-            </span>
+          
           </a>
 
           {/* Desktop Navigation */}
