@@ -47,36 +47,31 @@ const ContactSection = () => {
           {contacts.map((contact, index) => (
             <div
               key={index}
-              className={`relative overflow-hidden rounded-lg p-8 text-center hover-lift transition-all duration-300 ${
-                contact.highlight
+              className={`relative overflow-hidden rounded-lg p-8 text-center hover-lift transition-all duration-300 ${contact.highlight
                   ? "bg-gradient-to-br from-orange-500 to-orange-600 text-primary-foreground"
                   : "bg-card border border-border"
-              }`}
+                }`}
             >
               <div
-                className={`w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-6 ${
-                  contact.highlight
+                className={`w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-6 ${contact.highlight
                     ? "bg-primary-foreground/20"
                     : "bg-primary/10"
-                }`}
+                  }`}
               >
                 <contact.icon
-                  className={`w-8 h-8 ${
-                    contact.highlight ? "text-primary-foreground" : "text-primary"
-                  }`}
+                  className={`w-8 h-8 ${contact.highlight ? "text-primary-foreground" : "text-primary"
+                    }`}
                 />
               </div>
               <div
-                className={`text-sm font-medium mb-2 ${
-                  contact.highlight ? "text-primary-foreground/80" : "text-muted-foreground"
-                }`}
+                className={`text-sm font-medium mb-2 ${contact.highlight ? "text-primary-foreground/80" : "text-muted-foreground"
+                  }`}
               >
                 {contact.label}
               </div>
               <div
-                className={`text-2xl font-bold mb-6 ${
-                  contact.highlight ? "text-primary-foreground" : "text-foreground"
-                }`}
+                className={`text-2xl font-bold mb-6 ${contact.highlight ? "text-primary-foreground" : "text-foreground"
+                  }`}
                 dir="ltr"
               >
                 {contact.value}
@@ -86,7 +81,7 @@ const ContactSection = () => {
                   variant={contact.highlight ? "heroOutline" : "default"}
                   className="w-full"
                 >
-{contact.button}                </Button>
+                  {contact.button}                </Button>
               </a>
             </div>
           ))}
@@ -103,7 +98,7 @@ const ContactSection = () => {
               ليبيا
             </div>
             <a
-              href="https://maps.app.goo.gl/zCaGYNFgpciR8b1e9?g_st=ic"
+              href="https://maps.app.goo.gl/GphTNZBYpWbdff4t8"
               target="_blank"
               rel="noopener noreferrer"
             >
